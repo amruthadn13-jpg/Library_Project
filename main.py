@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import sqlite3
+import os
 
 app = Flask(__name__)
 
@@ -71,4 +72,7 @@ def search_book():
 
     return render_template("search.html", book=book)
 
-app.run(debug=True)
+# Run App (IMPORTANT FOR RENDER)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
