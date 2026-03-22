@@ -1,0 +1,45 @@
+body {
+    font-family: Arial;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+h1 {
+    background-color: darkblue;
+    color: white;
+    padding: 15px;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: darkgreen;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: green;
+}
+
+p {
+    background-color: white;
+    margin: 10px auto;
+    padding: 10px;
+    width: 50%;
+    border-radius: 8px;
+}
+
+input {
+    padding: 8px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
