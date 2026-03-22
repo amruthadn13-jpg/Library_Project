@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Book</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Search Book</h1>
+
+<form method="POST">
+    <input type="text" name="title" placeholder="Enter book name">
+    <button type="submit">Search</button>
+</form>
+
+{% if book %}
+    <h2>✅ Found: {{ book[1] }} by {{ book[2] }}</h2>
+{% elif book is not none %}
+    <h2>❌ Book Not Found</h2>
+{% endif %}
+
+<br>
+<a href="/">Go Home</a>
+
+</body>
+</html>
